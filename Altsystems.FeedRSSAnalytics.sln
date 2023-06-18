@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{0276AA62-422F-4A94-B960-B4A61A157F22}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.API", "1.API", "{0276AA62-422F-4A94-B960-B4A61A157F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altsystems.FeedRSSBlogsAnalyticsApi", "src\Altsystems.FeedRSSBlogsAnalyticsApi\Altsystems.FeedRSSBlogsAnalyticsApi.csproj", "{B8BA7945-2D07-4244-93FA-283C68754914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altsystems.FeedRSSBlogsAnalyticsApi", "src\Altsystems.FeedRSSBlogsAnalyticsApi\Altsystems.FeedRSSBlogsAnalyticsApi.csproj", "{B8BA7945-2D07-4244-93FA-283C68754914}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{908A7783-AAFF-4AA6-893D-B4004653EF06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Infra", "3.Infra", "{BF858474-768E-4DFC-9F78-8813D681419D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altsystems.FeedRSSAnalytics.Domain", "src\Altsystems.FeedRSSAnalytics.Domain\Altsystems.FeedRSSAnalytics.Domain.csproj", "{D301B2E6-1E99-4308-B1AD-66ACF180362B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altsystems.FeedRSSAnalytics.Infra", "src\Altsystems.FeedRSSAnalytics.Infra\Altsystems.FeedRSSAnalytics.Infra.csproj", "{A292DF37-4134-47CC-B4A7-3ECE9E58C9F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +25,22 @@ Global
 		{B8BA7945-2D07-4244-93FA-283C68754914}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8BA7945-2D07-4244-93FA-283C68754914}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8BA7945-2D07-4244-93FA-283C68754914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D301B2E6-1E99-4308-B1AD-66ACF180362B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D301B2E6-1E99-4308-B1AD-66ACF180362B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D301B2E6-1E99-4308-B1AD-66ACF180362B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D301B2E6-1E99-4308-B1AD-66ACF180362B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A292DF37-4134-47CC-B4A7-3ECE9E58C9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A292DF37-4134-47CC-B4A7-3ECE9E58C9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A292DF37-4134-47CC-B4A7-3ECE9E58C9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A292DF37-4134-47CC-B4A7-3ECE9E58C9F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B8BA7945-2D07-4244-93FA-283C68754914} = {0276AA62-422F-4A94-B960-B4A61A157F22}
+		{D301B2E6-1E99-4308-B1AD-66ACF180362B} = {908A7783-AAFF-4AA6-893D-B4004653EF06}
+		{A292DF37-4134-47CC-B4A7-3ECE9E58C9F1} = {BF858474-768E-4DFC-9F78-8813D681419D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {280891BA-9C89-4706-B190-3D271EEF5CC2}
