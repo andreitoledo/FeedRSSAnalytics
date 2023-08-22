@@ -34,5 +34,20 @@ namespace Altsystems.FeedRSSBlogsAnalyticsApi.Controllers
                        Count = x.Count()
                    };
         }
+
+        [HttpGet]
+        [Route("GetAuthors")]
+        public IQueryable<AuthorsDTO> GetAuthorsDTOs()
+        {
+            return _dbContext.ArticleMatrices.GroupBy(x => x.AuthorId)
+                .Select(x => new AuthorsDTO
+                {
+                    AuthorId = x.FirstOrDefault().AuthorId,
+                    Author = x.FirstOrDefault().Author,
+                    Count = x.Count()
+                })
+                
+                .OrderBy(x => x.Author);
+        }
     }
 }
