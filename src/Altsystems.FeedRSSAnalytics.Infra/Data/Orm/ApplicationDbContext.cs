@@ -8,7 +8,7 @@ namespace Altsystems.FeedRSSAnalytics.Infra.Data.Orm
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
             :base(options) { }
 
-        public DbSet<ArticleMatrix> ArticleMatrix { get; set; }
+        public DbSet<ArticleMatrix>? ArticleMatrices { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
