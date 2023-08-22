@@ -1,5 +1,7 @@
 
+using Altsystems.FeedRSSAnalytics.Domain.Repository.AbstractRepository;
 using Altsystems.FeedRSSAnalytics.Infra.Data.Orm;
+using Altsystems.FeedRSSAnalytics.Infra.Repository.ImplementationRepository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Altsystems.FeedRSSBlogsAnalyticsApi
@@ -20,6 +22,8 @@ namespace Altsystems.FeedRSSBlogsAnalyticsApi
             builder.Services.AddControllers();            
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddScoped<IQueryRepository, QueryRepository>();
 
             var app = builder.Build();
 
