@@ -18,13 +18,13 @@ namespace Altsystems.FeedRSSAnalytics.Domain.Entities
         public string? Type { get; set; }
 
         [Display(Name = "Categoria")]
-        public string? Category { get; set; }
+        public string? CategoryDTO { get; set; }
         public string? Views { get; set; }
 
         [Column(TypeName = "decimal(18,4)")]
         public decimal ViewsCount { get; set; }
 
         public int Likes { get; set; }
-        public DateTime PubDate { get; set; }
+        public DateTime? PubDate { get; set; }
     }
 }

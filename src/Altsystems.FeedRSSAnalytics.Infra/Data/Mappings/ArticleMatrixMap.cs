@@ -31,7 +31,7 @@ namespace Altsystems.FeedRSSAnalytics.Infra.Data.Mappings
                 .HasColumnType("varchar(50)")
                 .IsRequired();
 
-            builder.Property(x => x.Category)
+            builder.Property(x => x.CategoryDTO)
                 .HasColumnType("varchar(150)")
                 .IsRequired();
 
